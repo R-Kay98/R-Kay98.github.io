@@ -1,0 +1,11 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "YQ9UY76267.com.randyk98.ReceiptToCSV",
+        "paths": ["/login", "/login/*"]
+      }
+    ]
+  }
+}

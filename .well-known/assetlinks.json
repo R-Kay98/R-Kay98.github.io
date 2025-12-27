@@ -1,0 +1,10 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.randyk98.ReceiptToCSV",
+      "sha256_cert_fingerprints": ["27:E7:6C:89:F1:49:DF:45:77:09:44:A8:0B:2E:06:46:89:BB:22:63:EC:24:39:53:DD:24:FC:86:BC:E9:05:54"]
+    }
+  }
+]
