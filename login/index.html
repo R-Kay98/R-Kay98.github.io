@@ -6,7 +6,6 @@
         @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=DM+Sans:wght@300;400;500;600&display=swap');
 
         :root {
-          --cream: #FAFAF7;
           --ink: #1A1A18;
           --ink-light: #6B6B67;
           --emerald: #1A6B4A;
@@ -17,7 +16,7 @@
 
         * { box-sizing: border-box; margin: 0; padding: 0; }
 
-        .success-root {
+        .login-root {
           background: transparent;
           display: flex;
           align-items: center;
@@ -28,7 +27,6 @@
 
         .card {
           position: relative;
-          z-index: 1;
           background: white;
           border: 1px solid var(--border);
           border-radius: 2px;
@@ -126,6 +124,11 @@
           margin-bottom: 36px;
           opacity: 0;
           animation: fadeUp 0.5s ease 0.8s forwards;
+        }
+
+        .email-highlight {
+          font-weight: 500;
+          color: var(--ink);
         }
 
         @keyframes fadeUp {
@@ -235,7 +238,7 @@
         @media (max-width: 480px) {
           .card { padding: 40px 28px; }
         }
-      </style><div class="success-root"><div class="card"><div class="card-corner card-corner--tl"></div><div class="card-corner card-corner--tr"></div><div class="card-corner card-corner--bl"></div><div class="card-corner card-corner--br"></div><div class="icon-wrap"><svg class="check-svg" viewBox="0 0 24 24"><polyline class="check-path" points="4 12 9 17 20 7"></polyline></svg></div><div class="label">Payment Confirmed</div><h1 class="heading">Your order is confirmed</h1><p class="subtext">Thank you for your purchase. Your account has been updated and you now have access to all premium features.</p><div class="divider"></div><div class="redirect-bar"><div class="spinner"></div><span>Redirecting you automatically in&nbsp;<span class="countdown-num">2</span>&nbsp;seconds</span></div><button class="btn-primary"><svg class="btn-icon" viewBox="0 0 24 24"><path d="M3 12L12 4l9 8"></path><path d="M5 10v9a1 1 0 001 1h4v-5h4v5h4a1 1 0 001-1v-9"></path></svg>Return to Home</button><p class="footer-note">A receipt has been sent to your email address.</p></div></div></div><footer class="MuiBox-root css-mvgx7c"><div class="MuiContainer-root MuiContainer-maxWidthLg css-v7ep9c"><div class="MuiGrid-root MuiGrid-container MuiGrid-direction-xs-row MuiGrid-spacing-xs-4 css-199nrdm"><div class="MuiGrid-root MuiGrid-direction-xs-row css-1n5khr6"><h6 class="MuiTypography-root MuiTypography-h6 css-18d1rls">ReceiptToCSV</h6><p class="MuiTypography-root MuiTypography-body2 css-154nwra">Streamline your expense management with our AI-powered receipt processing platform.</p></div><div class="MuiGrid-root MuiGrid-direction-xs-row css-1n5khr6"><h6 class="MuiTypography-root MuiTypography-subtitle1 css-5hr8tt">Support</h6><div class="MuiBox-root css-1821gv5"><a class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-1paiq5b" href="/whatsnew/" data-discover="true">Latest Updates</a><a class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-1paiq5b" href="/contact-us/" data-discover="true">Contact Us</a><a class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-1paiq5b" href="/privacy-policy/" data-discover="true">Privacy Policy</a><a class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-1paiq5b" href="/terms-of-service/" data-discover="true">Terms of Service</a></div></div><div class="MuiGrid-root MuiGrid-direction-xs-row css-1n5khr6"><h6 class="MuiTypography-root MuiTypography-subtitle1 css-5hr8tt">Get the App</h6><div class="MuiBox-root css-yd8sa2"><a class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-16uah9n" href="https://play.google.com/store/apps/details?id=com.randyk98.ReceiptToCSV" target="_blank" rel="noopener noreferrer"><img alt="Get it on Google Play" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" style="width: 100%; height: auto;"></a><a class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-16uah9n" href="https://apps.apple.com/us/app/receipttocsv/id6744818081" target="_blank" rel="noopener noreferrer"><img alt="Download on the App Store" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" style="width: 100%; height: auto;"></a></div></div></div><hr class="MuiDivider-root MuiDivider-fullWidth css-g4y5o3"><p class="MuiTypography-root MuiTypography-body2 css-1h0ysqm">© 2025 ReceiptToCSV. All rights reserved.</p></div></footer></div></div><script>var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+      </style><div class="login-root"><div class="card"><div class="card-corner card-corner--tl"></div><div class="card-corner card-corner--tr"></div><div class="card-corner card-corner--bl"></div><div class="card-corner card-corner--br"></div><div class="icon-wrap"><svg class="check-svg" viewBox="0 0 24 24"><polyline class="check-path" points="4 12 9 17 20 7"></polyline></svg></div><div class="label">Authentication Successful</div><h1 class="heading">Welcome back</h1><p class="subtext">You've been successfully signed in. Your session is now active.</p><div class="divider"></div><div class="redirect-bar"><div class="spinner"></div><span>Redirecting you automatically in&nbsp;<span class="countdown-num">1</span>&nbsp;second</span></div><button class="btn-primary"><svg class="btn-icon" viewBox="0 0 24 24"><path d="M3 12L12 4l9 8"></path><path d="M5 10v9a1 1 0 001 1h4v-5h4v5h4a1 1 0 001-1v-9"></path></svg>Continue to Home</button><p class="footer-note">Signed in securely · Session stored locally</p></div></div></div><footer class="MuiBox-root css-mvgx7c"><div class="MuiContainer-root MuiContainer-maxWidthLg css-v7ep9c"><div class="MuiGrid-root MuiGrid-container MuiGrid-direction-xs-row MuiGrid-spacing-xs-4 css-199nrdm"><div class="MuiGrid-root MuiGrid-direction-xs-row css-1n5khr6"><h6 class="MuiTypography-root MuiTypography-h6 css-18d1rls">ReceiptToCSV</h6><p class="MuiTypography-root MuiTypography-body2 css-154nwra">Streamline your expense management with our AI-powered receipt processing platform.</p></div><div class="MuiGrid-root MuiGrid-direction-xs-row css-1n5khr6"><h6 class="MuiTypography-root MuiTypography-subtitle1 css-5hr8tt">Support</h6><div class="MuiBox-root css-1821gv5"><a class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-1paiq5b" href="/whatsnew/" data-discover="true">Latest Updates</a><a class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-1paiq5b" href="/contact-us/" data-discover="true">Contact Us</a><a class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-1paiq5b" href="/privacy-policy/" data-discover="true">Privacy Policy</a><a class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-1paiq5b" href="/terms-of-service/" data-discover="true">Terms of Service</a></div></div><div class="MuiGrid-root MuiGrid-direction-xs-row css-1n5khr6"><h6 class="MuiTypography-root MuiTypography-subtitle1 css-5hr8tt">Get the App</h6><div class="MuiBox-root css-yd8sa2"><a class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-16uah9n" href="https://play.google.com/store/apps/details?id=com.randyk98.ReceiptToCSV" target="_blank" rel="noopener noreferrer"><img alt="Get it on Google Play" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" style="width: 100%; height: auto;"></a><a class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-16uah9n" href="https://apps.apple.com/us/app/receipttocsv/id6744818081" target="_blank" rel="noopener noreferrer"><img alt="Download on the App Store" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" style="width: 100%; height: auto;"></a></div></div></div><hr class="MuiDivider-root MuiDivider-fullWidth css-g4y5o3"><p class="MuiTypography-root MuiTypography-body2 css-1h0ysqm">© 2025 ReceiptToCSV. All rights reserved.</p></div></footer></div></div><script>var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
       (function(){
       var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
       s1.async=true;
