@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page Not Found — ReceiptToCSV</title>
+    <script>
+      sessionStorage.redirect = location.href;
+    </script>
+    <meta http-equiv="refresh" content="0;URL='/'" />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=DM+Sans:wght@300;400;500;600&display=swap');
+
+      *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+      :root {
+        --ink: #1A1A18;
+        --ink-light: #6B6B67;
+        --emerald: #1A6B4A;
+        --emerald-light: #E8F5EE;
+        --border: #E5E5E0;
+        --gold: #C9A84C;
+        --bg: #fafafa;
+      }
+
+      body {
+        background: var(--bg);
+        font-family: 'DM Sans', sans-serif;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 24px;
+        color: var(--ink);
+      }
+
+      .card {
+        position: relative;
+        background: white;
+        border: 1px solid var(--border);
+        border-radius: 2px;
+        max-width: 480px;
+        width: 100%;
+        padding: 52px 48px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.04), 0 20px 60px rgba(0,0,0,0.06);
+        animation: cardReveal 0.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+      }
+
+      @keyframes cardReveal {
+        from { opacity: 0; transform: translateY(16px); }
+        to   { opacity: 1; transform: translateY(0); }
+      }
+
+      .corner {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+      }
+      .corner--tl { top: -1px; left: -1px; border-top: 2px solid var(--gold); border-left: 2px solid var(--gold); }
+      .corner--tr { top: -1px; right: -1px; border-top: 2px solid var(--gold); border-right: 2px solid var(--gold); }
+      .corner--bl { bottom: -1px; left: -1px; border-bottom: 2px solid var(--gold); border-left: 2px solid var(--gold); }
+      .corner--br { bottom: -1px; right: -1px; border-bottom: 2px solid var(--gold); border-right: 2px solid var(--gold); }
+
+      .icon-wrap {
+        width: 64px;
+        height: 64px;
+        background: var(--emerald-light);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 28px;
+      }
+
+      .icon-wrap svg {
+        width: 26px;
+        height: 26px;
+        stroke: var(--emerald);
+        stroke-width: 2;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        fill: none;
+      }
+
+      .label {
+        font-size: 10px;
+        font-weight: 600;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: var(--emerald);
+        text-align: center;
+        margin-bottom: 10px;
+      }
+
+      h1 {
+        font-family: 'Playfair Display', serif;
+        font-size: clamp(22px, 5vw, 28px);
+        font-weight: 600;
+        color: var(--ink);
+        text-align: center;
+        line-height: 1.25;
+        margin-bottom: 12px;
+      }
+
+      p {
+        font-size: 14px;
+        color: var(--ink-light);
+        text-align: center;
+        line-height: 1.7;
+        margin-bottom: 32px;
+      }
+
+      .divider {
+        height: 1px;
+        background: var(--border);
+        margin-bottom: 24px;
+      }
+
+      .redirect-bar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        font-size: 13px;
+        color: var(--ink-light);
+        margin-bottom: 20px;
+      }
+
+      .spinner {
+        width: 14px;
+        height: 14px;
+        border: 1.5px solid var(--border);
+        border-top-color: var(--emerald);
+        border-radius: 50%;
+        animation: spin 0.8s linear infinite;
+        flex-shrink: 0;
+      }
+
+      @keyframes spin { to { transform: rotate(360deg); } }
+
+      a.btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        width: 100%;
+        padding: 14px 24px;
+        background: var(--ink);
+        color: white;
+        border: none;
+        border-radius: 2px;
+        font-family: 'DM Sans', sans-serif;
+        font-size: 13px;
+        font-weight: 500;
+        letter-spacing: 0.03em;
+        text-decoration: none;
+        cursor: pointer;
+        transition: background 0.2s ease, transform 0.15s ease;
+      }
+
+      a.btn:hover {
+        background: #2D2D2A;
+        transform: translateY(-1px);
+      }
+
+      .footer-note {
+        margin-top: 20px;
+        text-align: center;
+        font-size: 11px;
+        color: #BBBBB5;
+        letter-spacing: 0.02em;
+      }
+
+      @media (max-width: 480px) {
+        .card { padding: 40px 24px; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="corner corner--tl"></div>
+      <div class="corner corner--tr"></div>
+      <div class="corner corner--bl"></div>
+      <div class="corner corner--br"></div>
+
+      <div class="icon-wrap">
+        <svg viewBox="0 0 24 24">
+          <circle cx="11" cy="11" r="8" />
+          <line x1="21" y1="21" x2="16.65" y2="16.65" />
+        </svg>
+      </div>
+
+      <div class="label">Redirecting</div>
+      <h1>Page not found</h1>
+      <p>The page you're looking for doesn't exist, or may have moved. You'll be redirected to the home page automatically.</p>
+
+      <div class="divider"></div>
+
+      <div class="redirect-bar">
+        <div class="spinner"></div>
+        <span>Taking you home…</span>
+      </div>
+
+      <a href="/" class="btn">
+        <svg width="14" height="14" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+          <path d="M3 12L12 4l9 8" /><path d="M5 10v9a1 1 0 001 1h4v-5h4v5h4a1 1 0 001-1v-9" />
+        </svg>
+        Go to Home
+      </a>
+
+      <p class="footer-note">receipttocsv.dev</p>
+    </div>
+  </body>
+</html>
