@@ -1,0 +1,23 @@
+# ReceiptToCSV
+
+> Receipt scanning SaaS that turns photographed or uploaded receipts into an organized expense report — itemized totals, taxes, and payment method included, exportable as CSV, PDF, or JSON. Available as a web app and native iOS/Android apps. No login required to try it.
+
+ReceiptToCSV uses AI to extract structured data (store, line items, totals, taxes, payment method) from receipt photos or PDFs, with duplicate detection and support for batch uploads. Plans range from a free tier (20 scans/month) to Premium and Team tiers with shared organization scan pools, an admin portal, and an AI assistant for querying receipt history.
+
+## Product
+
+- [Pricing](https://receipttocsv.dev/pricing/): Free, Premium, and Team plan details and scan limits
+- [What's New](https://receipttocsv.dev/whatsnew/): Changelog of recent product updates
+- [Documentation](https://docs.receipttocsv.dev): API and usage documentation
+
+## Company
+
+- [About Us](https://receipttocsv.dev/about-us/)
+- [Contact Us](https://receipttocsv.dev/contact-us/)
+- [Privacy Policy](https://receipttocsv.dev/privacy-policy/)
+- [Terms of Service](https://receipttocsv.dev/terms-of-service/)
+
+## Apps
+
+- [Android app](https://play.google.com/store/apps/details?id=com.randyk98.ReceiptToCSV)
+- [iOS app](https://apps.apple.com/us/app/receipttocsv/id6744818081)
