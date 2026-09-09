@@ -1,14 +1,19 @@
 # ReceiptToCSV
 
-> Receipt scanning SaaS that turns photographed or uploaded receipts into an organized expense report — itemized totals, taxes, and payment method included, exportable as CSV, PDF, or JSON. Available as a web app and native iOS/Android apps. No login required to try it.
+> Document scanning SaaS that turns photographed or uploaded receipts, invoices, bank statements, and credit card statements into organized, exportable data — itemized totals, taxes, transactions, balances, and due dates included, exportable as CSV, PDF, or JSON. Available as a web app and native iOS/Android apps. No login required to try it.
 
-ReceiptToCSV uses AI to extract structured data (store, line items, totals, taxes, payment method) from receipt photos or PDFs, with duplicate detection and support for batch uploads. Plans range from a free tier (20 scans/month) to Premium and Team tiers with shared organization scan pools, an admin portal, and an AI assistant for querying receipt history.
+ReceiptToCSV uses AI to extract structured data from four document types: receipts (store, line items, totals, taxes, payment method), invoices (vendor, line items, due date, amount due), bank statements (institution, transactions, opening/closing balance), and credit card statements (issuer, transactions, balance, payment due date) — with duplicate detection and support for batch uploads. Plans range from a free tier (20 scans/month) to Premium and Team tiers with shared organization scan pools, an admin portal, and an AI assistant for querying document history.
 
 ## Product
 
 - [Pricing](https://receipttocsv.dev/pricing/): Free, Premium, and Team plan details and scan limits
 - [What's New](https://receipttocsv.dev/whatsnew/): Changelog of recent product updates
-- [Documentation](https://docs.receipttocsv.dev): API and usage documentation
+- [How to Use](https://receipttocsv.dev/how-to-use/): Step-by-step usage documentation
+- [Turn Receipts Into a Spreadsheet](https://receipttocsv.dev/receipts-to-spreadsheet/): How receipt-to-spreadsheet conversion works
+- [Bank Statement to CSV](https://receipttocsv.dev/bank-statement-to-csv/): Converting bank statements to CSV/Excel
+- [Credit Card Statement to CSV](https://receipttocsv.dev/credit-card-statement-to-csv/): Converting credit card statements to CSV/Excel
+- [Invoice to CSV](https://receipttocsv.dev/invoice-to-csv/): Converting invoices to CSV/Excel
+- [Tax Season Guide](https://receipttocsv.dev/tax-season-guide/): Organizing and categorizing receipts for tax filing
 
 ## Company
 
